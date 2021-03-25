@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0; 
+    font-family: 'Times New Roman', Times, serif;
+    background: black; 
+    color: white; 
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#head-section{
+    display: flex;
+    justify-content: center;
+    
+}
+.head-content{
+    height: 500px;
+    width: 60%;
+    padding-top: 250px;
+    padding-left: 200px;
+    color:#fff;
+    text-align: center;
+}
+#head-section .head-image{
+position: absolute;
+width: 100%;
+height: 700px;
+background-image: url('../img/botim1.jpeg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+z-index: -1;
+opacity: 0.4;
+}
+.btn{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 30px;
+    border: 1px solid #666;
+    margin: 5px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background: #eaeaea;
+    color: #333;
+}
+.container li{
+    display: flex;
+    flex-direction: column;
+    background: #666;
+    padding: 14px 30px;
+    border: 1px solid #666;
+    margin: 5px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.navigation li a{
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width:600px){
+    body{
+        width: 100%;
+    }
+    .head-content{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .head-image{
+        width: 100%;
+    }
+    #head-section {
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid #666;
+        margin: 3px;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    .navigation{
+        width: 100%;
+        display: flex;
+        margin-right: 30px;
+        justify-content: center;
+    }
+   
+    .container li{
+        display: flex;
+        flex-direction: row;
+        background: #666;
+        padding: 5px 10px;
+        border: 1px solid #666;
+        margin: 3px;
+        margin-right: 200px;
+        margin-top: 10px;
+        border-radius: 10px;
+    } 
+}
